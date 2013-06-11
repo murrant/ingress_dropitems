@@ -23,11 +23,14 @@ screenheight=1280
 
 # TODO: Ratios need verification on various screen sizes, could be off since sizes are based on DPI, not resolution
 # Set these manually if the guess based of screen resolution is wrong
-hcenter=$screenwidth*0.5
-vcenter=$screenheight*0.5
-opsx=$screenwidth*0.9
-opsy=$screenheight*0.07
-dropy=$screenheight*0.875
+hcenter=$(($screenwidth / 2))
+vcenter=$(($screenheight / 2))
+opsx=$(($screenwidth * 9 / 10))
+opsy=$(($screenheight * 7 / 100))
+dropy=$(($screenheight * 7 / 8))
+
+# Troublshooting to see the actual values
+#echo $hcenter $vcenter $opsx $opsy $dropy
 
 x=0
 while [ $x -lt  $1 ]; do
