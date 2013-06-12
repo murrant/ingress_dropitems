@@ -1,5 +1,5 @@
 ## Ingress Item Drop Script ##
-# v1.1
+# v1.2
 #
 # ***** WARNING, this may recycle your items, test with one item first! *****
 #
@@ -27,7 +27,7 @@ hcenter=$(($screenwidth / 2))
 vcenter=$(($screenheight / 2))
 opsx=$(($screenwidth * 9 / 10))
 opsy=$(($screenheight * 7 / 100))
-dropy=$(($screenheight * 7 / 8))
+dropy=$(($screenheight * 92 / 100))
 
 # Troublshooting to see the actual values
 #echo $hcenter $vcenter $opsx $opsy $dropy
